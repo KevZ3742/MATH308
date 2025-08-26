@@ -1,0 +1,677 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Math 308</title>
+<!--Generated on Mon Aug 25 16:18:05 2025 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="ltx-ulem.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="lnotes.css" type="text/css">
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">Math 308</h1>
+<div class="ltx_authors">
+<span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">Rob Rahm
+</span></span>
+</div>
+
+<section id="S1" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">1 </span>Introduction</h2>
+
+<div id="S1.p1" class="ltx_para">
+<p class="ltx_p">This chapter provides a foundation for our study of differential equations. We will return
+to the themes in this chapter throughout the book. A <span class="ltx_text ltx_font_italic">differential equation</span> is an equation that relates an unknown function and its derivatives. The goal is
+to find a function (or, more typically, a set of functions) that satisfies this equation.</p>
+</div>
+<div id="Thmthm1" class="ltx_theorem ltx_theorem_rem">
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">Remark 1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmthm1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Typically in this class, the variable “<math id="Thmthm1.p1.m1" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>” will be used to denote the dependent variable and “<math id="Thmthm1.p1.m2" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math>” will be
+the independent variable (so, <math id="Thmthm1.p1.m3" class="ltx_Math" alttext="x=x(t)" display="inline"><mrow><mi>x</mi><mo>=</mo><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> means that <math id="Thmthm1.p1.m4" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> is a function of the variable <math id="Thmthm1.p1.m5" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math>). But we will also use
+<math id="Thmthm1.p1.m6" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math> is the dependent variable and <math id="Thmthm1.p1.m7" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> or <math id="Thmthm1.p1.m8" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math> as the independent variable. See the examples below.</span></p>
+</div>
+</div>
+<div id="S1.Thmtheorem1" class="ltx_theorem ltx_theorem_example">
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">Example 1.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="S1.Thmtheorem1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Find functions that satisfy the following differential equations:</span></p>
+<ol id="S1.I1" class="ltx_enumerate">
+<li id="S1.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span> 
+<div id="S1.I1.i1.p1" class="ltx_para">
+<p class="ltx_p"><math id="S1.I1.i1.p1.m1" class="ltx_Math" alttext="x^{\prime}(t)=x(t)" display="inline"><mrow><mrow><msup><mi>x</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="S1.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span> 
+<div id="S1.I1.i2.p1" class="ltx_para">
+<p class="ltx_p"><math id="S1.I1.i2.p1.m1" class="ltx_Math" alttext="x^{\prime}=cx" display="inline"><mrow><msup><mi>x</mi><mo>′</mo></msup><mo>=</mo><mrow><mi>c</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></math><span class="ltx_text ltx_font_italic"> (where </span><math id="S1.I1.i2.p1.m2" class="ltx_Math" alttext="c" display="inline"><mi>c</mi></math><span class="ltx_text ltx_font_italic"> is a constant)</span></p>
+</div>
+</li>
+<li id="S1.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span> 
+<div id="S1.I1.i3.p1" class="ltx_para">
+<p class="ltx_p"><math id="S1.I1.i3.p1.m1" class="ltx_Math" alttext="x^{\prime\prime}+x=0" display="inline"><mrow><mrow><msup><mi>x</mi><mo>′′</mo></msup><mo>+</mo><mi>x</mi></mrow><mo>=</mo><mn>0</mn></mrow></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="S1.I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span> 
+<div id="S1.I1.i4.p1" class="ltx_para">
+<p class="ltx_p"><math id="S1.I1.i4.p1.m1" class="ltx_Math" alttext="x^{\prime}=2x" display="inline"><mrow><msup><mi>x</mi><mo>′</mo></msup><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></math><span class="ltx_text ltx_font_italic"> and </span><math id="S1.I1.i4.p1.m2" class="ltx_Math" alttext="x(0)=1" display="inline"><mrow><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="S1.I1.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">5.</span> 
+<div id="S1.I1.i5.p1" class="ltx_para">
+<p class="ltx_p"><math id="S1.I1.i5.p1.m1" class="ltx_Math" alttext="x^{\prime}=-x" display="inline"><mrow><msup><mi>x</mi><mo>′</mo></msup><mo>=</mo><mrow><mo>−</mo><mi>x</mi></mrow></mrow></math><span class="ltx_text ltx_font_italic"> and </span><math id="S1.I1.i5.p1.m2" class="ltx_Math" alttext="x(1)=2" display="inline"><mrow><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>2</mn></mrow></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="ltx_logical-block workbox ltx_framed_rectangle">
+<div class="ltx_logical-block BigVertspace">
+</div>
+<div class="ltx_logical-block BigVertspace">
+</div>
+<div class="ltx_logical-block BigVertspace">
+</div>
+<div class="ltx_logical-block BigVertspace">
+</div>
+<div class="ltx_logical-block Vertspace">
+</div>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+<div id="S1.p2" class="ltx_para">
+<p class="ltx_p">These examples illustrate the following <span class="ltx_text ltx_font_italic">Fundamental Facts</span> (this is my term; it isn’t standard):</p>
+</div>
+<div class="ltx_logical-block BigBigVertspace">
+</div>
+<div class="ltx_logical-block BigVertspace">
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+<section id="S1.SS1" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">1.1 </span>Some Basic Mathematical Models; Direction Fields</h3>
+
+<div id="S1.SS1.p1" class="ltx_para">
+<p class="ltx_p">The differential equations we just looked at are some of the simplest there are. They were given as an example
+of differential equations and what it means to solve one, and the notion that there is often several functions
+that satisfy a differential equation.</p>
+</div>
+<div id="S1.SS1.p2" class="ltx_para">
+<p class="ltx_p">Differential Equations often arise from the study of a “real life” phenomenon and from “pure mathematical”
+questions. Our focus will be on application from “real life”, but the theory (as we will see) is important.
+Typically, a situation can be described directly by a differential equation. Here is an example.</p>
+</div>
+<div id="S1.Thmtheorem2" class="ltx_theorem ltx_theorem_example">
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">Example 1.2</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="S1.Thmtheorem2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Suppose that an object is falling in the atmosphere near sea level. Formulate a differential equation that
+describes the motion.</span></p>
+</div>
+</div>
+<div class="ltx_logical-block workbox ltx_framed_rectangle">
+<div class="ltx_logical-block BigBigVertspace">
+</div>
+<div class="ltx_logical-block BigVertspace">
+</div>
+<div class="ltx_logical-block BigVertspace">
+</div>
+<div class="ltx_logical-block vertspace">
+</div>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+<div id="S1.SS1.p3" class="ltx_para">
+<p class="ltx_p">Assume that <math id="S1.SS1.p3.m1" class="ltx_Math" alttext="\frac{\gamma}{m}=\frac{1}{5}" display="inline"><mrow><mfrac><mi>γ</mi><mi>m</mi></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>5</mn></mfrac></mrow></math>. Then we found that <math id="S1.SS1.p3.m2" class="ltx_Math" alttext="\dfrac{dv}{dt}=-(9.8+\dfrac{v}{5})" display="inline"><mrow><mstyle displaystyle="true"><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>v</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>t</mi></mrow></mfrac></mstyle><mo>=</mo><mrow><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><mn>9.8</mn><mo>+</mo><mstyle displaystyle="true"><mfrac><mi>v</mi><mn>5</mn></mfrac></mstyle></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math>.
+This means that if we know what <math id="S1.SS1.p3.m3" class="ltx_Math" alttext="v" display="inline"><mi>v</mi></math> is, we know what
+<math id="S1.SS1.p3.m4" class="ltx_Math" alttext="v^{\prime}" display="inline"><msup><mi>v</mi><mo>′</mo></msup></math> is. But remember, <math id="S1.SS1.p3.m5" class="ltx_Math" alttext="v^{\prime}(t)" display="inline"><mrow><msup><mi>v</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></math> is the slope of the tangent line at the point <math id="S1.SS1.p3.m6" class="ltx_Math" alttext="(t,v(t))" display="inline"><mrow><mo stretchy="false">(</mo><mi>t</mi><mo>,</mo><mrow><mi>v</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></math>. So we can
+use this to help us sketch solutions.</p>
+</div>
+<div id="S1.Thmtheorem3" class="ltx_theorem ltx_theorem_example">
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">Example 1.3</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="S1.Thmtheorem3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Investigate the behavior of solutions of this equation without solving the differential equation.</span></p>
+</div>
+</div>
+<figure id="S1.F1" class="ltx_figure"><img src="Pictures/grid.png" id="S1.F1.g1" class="ltx_graphics ltx_centering ltx_img_square" width="538" height="538" alt="Refer to caption">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 1: </span>A blank grid for student work.</figcaption>
+</figure>
+<div class="ltx_pagination ltx_role_newpage"></div>
+<div id="S1.SS1.p4" class="ltx_para">
+<p class="ltx_p">When studying the equation <math id="S1.SS1.p4.m1" class="ltx_Math" alttext="\dfrac{dx}{dt}=f(t,x)" display="inline"><mrow><mstyle displaystyle="true"><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>t</mi></mrow></mfrac></mstyle><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo>,</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>, at each point <math id="S1.SS1.p4.m2" class="ltx_Math" alttext="(t,x)" display="inline"><mrow><mo stretchy="false">(</mo><mi>t</mi><mo>,</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></math> we can plot a short line
+segment whose slope is equal to <math id="S1.SS1.p4.m3" class="ltx_Math" alttext="f(t,x)" display="inline"><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo>,</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math>. This is called a <span class="ltx_text ltx_font_italic">direction field</span>.</p>
+</div>
+<div id="S1.Thmtheorem4" class="ltx_theorem ltx_theorem_example">
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">Example 1.4</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="S1.Thmtheorem4.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Consider a population of field mice that inhabit a rural area. There is a population of owls
+that eat 15 mice per day. Find a
+differential equation that models the population of mice. Then sketch the direction field.</span></p>
+</div>
+</div>
+<div class="ltx_logical-block workbox ltx_framed_rectangle">
+<div class="ltx_logical-block BigBigVertspace">
+</div>
+<div class="ltx_logical-block BigVertspace">
+</div>
+<div class="ltx_logical-block BigVertspace">
+</div>
+<div class="ltx_logical-block BigVertspace">
+</div>
+<div class="ltx_logical-block vertspace">
+</div>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+<div id="S1.SS1.p5" class="ltx_para">
+<p class="ltx_p">Sketch the direction field below:</p>
+</div>
+<figure id="S1.F2" class="ltx_figure"><img src="Pictures/grid.png" id="S1.F2.g1" class="ltx_graphics ltx_centering ltx_img_square" width="538" height="538" alt="Refer to caption">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 2: </span>A blank grid for student work.</figcaption>
+</figure>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</section>
+<section id="S1.SS2" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">1.2 </span>Solutions of Differential Equations</h3>
+
+<div id="S1.SS2.p1" class="ltx_para">
+<p class="ltx_p">In this section, we will think about how to solve some of the ODEs we have seen.</p>
+</div>
+<div id="S1.Thmtheorem5" class="ltx_theorem ltx_theorem_example">
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">Example 1.5</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="S1.Thmtheorem5.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Find a solution to <math id="S1.Thmtheorem5.p1.m1" class="ltx_Math" alttext="\dfrac{dp}{dt}=.5p-450" display="inline"><mrow><mstyle displaystyle="true"><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>p</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>t</mi></mrow></mfrac></mstyle><mo>=</mo><mrow><mrow><mn>.5</mn><mo>⁢</mo><mi>p</mi></mrow><mo>−</mo><mn>450</mn></mrow></mrow></math></span></p>
+</div>
+</div>
+<div class="ltx_logical-block workbox ltx_framed_rectangle">
+<div class="ltx_logical-block BigBigVertspace">
+</div>
+<div class="ltx_logical-block BigVertspace">
+</div>
+<div class="ltx_logical-block BigVertspace">
+</div>
+<div class="ltx_logical-block BigVertspace">
+</div>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+<div id="S1.SS2.p2" class="ltx_para">
+<p class="ltx_p">Another important technique is change of variable:</p>
+</div>
+<div id="S1.Thmtheorem6" class="ltx_theorem ltx_theorem_example">
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">Example 1.6</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="S1.Thmtheorem6.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Let <math id="S1.Thmtheorem6.p1.m1" class="ltx_Math" alttext="q=p-900" display="inline"><mrow><mi>q</mi><mo>=</mo><mrow><mi>p</mi><mo>−</mo><mn>900</mn></mrow></mrow></math>. Solve the equation for <math id="S1.Thmtheorem6.p1.m2" class="ltx_Math" alttext="q" display="inline"><mi>q</mi></math> and use this to find <math id="S1.Thmtheorem6.p1.m3" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math>.</span></p>
+</div>
+</div>
+<div class="ltx_logical-block workbox ltx_framed_rectangle">
+<div class="ltx_logical-block BigBigVertspace">
+</div>
+<div class="ltx_logical-block BigVertspace">
+</div>
+<div class="ltx_logical-block BigVertspace">
+</div>
+<div class="ltx_logical-block BigVertspace">
+</div>
+<div class="ltx_logical-block Vertspace">
+</div>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+<div id="S1.SS2.p3" class="ltx_para">
+<p class="ltx_p">Notice that there is a parameter in the solution. To determine the parameter, we must know
+the value of <math id="S1.SS2.p3.m1" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math> at some time. Typically, we know <math id="S1.SS2.p3.m2" class="ltx_Math" alttext="p(0)" display="inline"><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></math> and so we call this an initial
+value problem.</p>
+</div>
+<div id="S1.Thmtheorem7" class="ltx_theorem ltx_theorem_example">
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">Example 1.7</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="S1.Thmtheorem7.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Find <math id="S1.Thmtheorem7.p1.m1" class="ltx_Math" alttext="p(t)" display="inline"><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></math> if <math id="S1.Thmtheorem7.p1.m2" class="ltx_Math" alttext="p(0)=850" display="inline"><mrow><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>850</mn></mrow></math>. If we know that <math id="S1.Thmtheorem7.p1.m3" class="ltx_Math" alttext="p(5)=200" display="inline"><mrow><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>5</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>200</mn></mrow></math>, what is <math id="S1.Thmtheorem7.p1.m4" class="ltx_Math" alttext="p(0)" display="inline"><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></math>?</span></p>
+</div>
+</div>
+<div class="ltx_logical-block workbox ltx_framed_rectangle">
+<div class="ltx_logical-block BigBigVertspace">
+</div>
+<div class="ltx_logical-block BigVertspace">
+</div>
+<div class="ltx_logical-block BigVertspace">
+</div>
+<div class="ltx_logical-block BigVertspace">
+</div>
+<div class="ltx_logical-block Vertspace">
+</div>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+<div id="S1.Thmtheorem8" class="ltx_theorem ltx_theorem_example">
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">Example 1.8</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="S1.Thmtheorem8.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Solve <math id="S1.Thmtheorem8.p1.m1" class="ltx_Math" alttext="\dfrac{dv}{dt}=9.8-\dfrac{v}{5}" display="inline"><mrow><mstyle displaystyle="true"><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>v</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>t</mi></mrow></mfrac></mstyle><mo>=</mo><mrow><mn>9.8</mn><mo>−</mo><mstyle displaystyle="true"><mfrac><mi>v</mi><mn>5</mn></mfrac></mstyle></mrow></mrow></math> if it is dropped from a height of 300 m. How
+long until it hits the ground?</span></p>
+</div>
+</div>
+<div class="ltx_logical-block workbox ltx_framed_rectangle">
+<div class="ltx_logical-block BigBigVertspace">
+</div>
+<div class="ltx_logical-block BigVertspace">
+</div>
+<div class="ltx_logical-block BigVertspace">
+</div>
+<div class="ltx_logical-block BigVertspace">
+</div>
+<div class="ltx_logical-block Vertspace">
+</div>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</section>
+<section id="S1.SS3" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">1.3 </span>Classification of Differential Equations</h3>
+
+<div id="S1.SS3.p1" class="ltx_para">
+<p class="ltx_p">There are many different types of differential equations. There is a classificaiton that
+helps us understand the nature of the solutions and which techniques we have to analyze and
+solve each one.</p>
+</div>
+<section id="S1.SS3.SSS1" class="ltx_subsubsection">
+<h4 class="ltx_title ltx_title_subsubsection">
+<span class="ltx_tag ltx_tag_subsubsection">1.3.1 </span>Ordinary vs Partial</h4>
+
+<div id="S1.SS3.SSS1.p1" class="ltx_para">
+<span class="ltx_inline-logical-block halfworkbox ltx_framed_rectangle">
+<span id="S1.SS3.SSS1.p1.p1" class="ltx_para">
+<span class="ltx_p">Ordinary:</span>
+</span>
+<span class="ltx_logical-block BigBigVertspace">
+</span></span><span class="ltx_inline-logical-block halfworkbox ltx_framed_rectangle">
+<span id="S1.SS3.SSS1.p1.p2" class="ltx_para">
+<span class="ltx_p">Partial:</span>
+</span>
+<span class="ltx_logical-block BigBigVertspace">
+</span></span>
+</div>
+</section>
+<section id="S1.SS3.SSS2" class="ltx_subsubsection">
+<h4 class="ltx_title ltx_title_subsubsection">
+<span class="ltx_tag ltx_tag_subsubsection">1.3.2 </span>Order</h4>
+
+<div id="S1.SS3.SSS2.p1" class="ltx_para">
+<span class="ltx_inline-logical-block halfworkbox ltx_framed_rectangle">
+<span id="S1.SS3.SSS2.p1.p1" class="ltx_para">
+<span class="ltx_p">First Order:</span>
+</span>
+<span class="ltx_logical-block BigVertspace">
+</span>
+<span class="ltx_logical-block BigVertspace">
+</span>
+<span class="ltx_logical-block BigVertspace">
+</span>
+<span class="ltx_logical-block BigVertspace">
+</span></span><span class="ltx_inline-logical-block halfworkbox ltx_framed_rectangle">
+<span id="S1.SS3.SSS2.p1.p2" class="ltx_para">
+<span class="ltx_p">Second Order:</span>
+</span>
+<span class="ltx_logical-block BigVertspace">
+</span>
+<span class="ltx_logical-block BigVertspace">
+</span>
+<span class="ltx_logical-block BigVertspace">
+</span>
+<span class="ltx_logical-block BigVertspace">
+</span></span><span class="ltx_inline-logical-block halfworkbox ltx_framed_rectangle">
+<span id="S1.SS3.SSS2.p1.p3" class="ltx_para">
+<span class="ltx_p">Third Order:</span>
+</span>
+<span class="ltx_logical-block BigVertspace">
+</span>
+<span class="ltx_logical-block BigVertspace">
+</span>
+<span class="ltx_logical-block BigVertspace">
+</span>
+<span class="ltx_logical-block BigVertspace">
+</span></span><span class="ltx_inline-logical-block halfworkbox ltx_framed_rectangle">
+<span id="S1.SS3.SSS2.p1.p4" class="ltx_para">
+<span class="ltx_p">Higher Order:</span>
+</span>
+<span class="ltx_logical-block BigVertspace">
+</span>
+<span class="ltx_logical-block BigVertspace">
+</span>
+<span class="ltx_logical-block BigVertspace">
+</span>
+<span class="ltx_logical-block BigVertspace">
+</span></span>
+</div>
+</section>
+<section id="S1.SS3.SSS3" class="ltx_subsubsection">
+<h4 class="ltx_title ltx_title_subsubsection">
+<span class="ltx_tag ltx_tag_subsubsection">1.3.3 </span>Number of Equations</h4>
+
+<div id="S1.SS3.SSS3.p1" class="ltx_para">
+<span class="ltx_inline-logical-block halfworkbox ltx_framed_rectangle">
+<span id="S1.SS3.SSS3.p1.p1" class="ltx_para">
+<span class="ltx_p">One Equation:</span>
+</span>
+<span class="ltx_logical-block BigVertspace">
+</span>
+<span class="ltx_logical-block BigVertspace">
+</span>
+<span class="ltx_logical-block BigVertspace">
+</span>
+<span class="ltx_logical-block BigVertspace">
+</span></span><span class="ltx_inline-logical-block halfworkbox ltx_framed_rectangle">
+<span id="S1.SS3.SSS3.p1.p2" class="ltx_para">
+<span class="ltx_p">One or more Equations:</span>
+</span>
+<span class="ltx_logical-block BigVertspace">
+</span>
+<span class="ltx_logical-block BigVertspace">
+</span>
+<span class="ltx_logical-block BigVertspace">
+</span>
+<span class="ltx_logical-block BigVertspace">
+</span></span>
+</div>
+</section>
+<section id="S1.SS3.SSS4" class="ltx_subsubsection">
+<h4 class="ltx_title ltx_title_subsubsection">
+<span class="ltx_tag ltx_tag_subsubsection">1.3.4 </span>Linear</h4>
+
+<div id="S1.SS3.SSS4.p1" class="ltx_para">
+<p class="ltx_p">The equation <math id="S1.SS3.SSS4.p1.m1" class="ltx_Math" alttext="F(t,x,x^{\prime},\ldots,x^{(n)})=0" display="inline"><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo>,</mo><mi>x</mi><mo>,</mo><msup><mi>x</mi><mo>′</mo></msup><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msup><mi>x</mi><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></msup><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math> is linear if <math id="S1.SS3.SSS4.p1.m2" class="ltx_Math" alttext="F" display="inline"><mi>F</mi></math> is a linear function
+of the variables <math id="S1.SS3.SSS4.p1.m3" class="ltx_Math" alttext="x,x^{\prime},\ldots,x^{(n)}" display="inline"><mrow><mi>x</mi><mo>,</mo><msup><mi>x</mi><mo>′</mo></msup><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msup><mi>x</mi><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></msup></mrow></math>. The function <math id="S1.SS3.SSS4.p1.m4" class="ltx_Math" alttext="F" display="inline"><mi>F</mi></math> is linear in a variable if:</p>
+</div>
+<div class="ltx_logical-block vertspace">
+</div>
+<div id="S1.SS3.SSS4.p2" class="ltx_para">
+<span class="ltx_inline-logical-block halfworkbox ltx_framed_rectangle">
+<span id="S1.SS3.SSS4.p2.p1" class="ltx_para">
+<span class="ltx_p">Linear:</span>
+</span>
+<span class="ltx_logical-block BigVertspace">
+</span>
+<span class="ltx_logical-block BigVertspace">
+</span>
+<span class="ltx_logical-block BigVertspace">
+</span>
+<span class="ltx_logical-block BigVertspace">
+</span></span><span class="ltx_inline-logical-block halfworkbox ltx_framed_rectangle">
+<span id="S1.SS3.SSS4.p2.p2" class="ltx_para">
+<span class="ltx_p">Non–Linear:</span>
+</span>
+<span class="ltx_logical-block BigVertspace">
+</span>
+<span class="ltx_logical-block BigVertspace">
+</span>
+<span class="ltx_logical-block BigVertspace">
+</span>
+<span class="ltx_logical-block BigVertspace">
+</span></span>
+</div>
+<div class="ltx_logical-block vertspace">
+</div>
+<div id="S1.SS3.SSS4.p3" class="ltx_para">
+<p class="ltx_p">Informally, a <span class="ltx_text ltx_font_italic">solution</span> of differential equation is a function that satisfies
+the equation. More precisely:</p>
+</div>
+<div id="S1.Thmtheorem9" class="ltx_theorem ltx_theorem_definition">
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">Definition 1.9</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div class="ltx_logical-block BigBigVertspace">
+</div>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+<div id="S1.SS3.SSS4.p4" class="ltx_para">
+<p class="ltx_p">When dealing with differential equations, there are two fundamental questions:</p>
+</div>
+</section>
+<section id="S1.SS3.SSS5" class="ltx_subsubsection">
+<h4 class="ltx_title ltx_title_subsubsection">
+<span class="ltx_tag ltx_tag_subsubsection">1.3.5 </span>Existence</h4>
+
+<div class="ltx_logical-block BigBigVertspace">
+</div>
+</section>
+<section id="S1.SS3.SSS6" class="ltx_subsubsection">
+<h4 class="ltx_title ltx_title_subsubsection">
+<span class="ltx_tag ltx_tag_subsubsection">1.3.6 </span>Uniqueness</h4>
+
+<div class="ltx_logical-block BigBigVertspace">
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</section>
+</section>
+<section id="S1.SS4" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">1.4 </span>Some Exercises</h3>
+
+<div id="S1.Thmtheorem10" class="ltx_theorem ltx_theorem_question">
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">Question 1.10</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="S1.Thmtheorem10.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Verify that <math id="S1.Thmtheorem10.p1.m1" class="ltx_Math" alttext="x(t)=e^{t^{2}}\int_{0}^{t}e^{-s^{2}}ds+e^{t^{2}}" display="inline"><mrow><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msup><mi>e</mi><msup><mi>t</mi><mn>2</mn></msup></msup><mo>⁢</mo><mrow><msubsup><mo>∫</mo><mn>0</mn><mi>t</mi></msubsup><mrow><msup><mi>e</mi><mrow><mo>−</mo><msup><mi>s</mi><mn>2</mn></msup></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>s</mi></mrow></mrow></mrow></mrow><mo>+</mo><msup><mi>e</mi><msup><mi>t</mi><mn>2</mn></msup></msup></mrow></mrow></math> is a solution to
+the differential equation <math id="S1.Thmtheorem10.p1.m2" class="ltx_Math" alttext="x^{\prime}-2tx=1" display="inline"><mrow><mrow><msup><mi>x</mi><mo>′</mo></msup><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mi>t</mi><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>=</mo><mn>1</mn></mrow></math>.</span></p>
+</div>
+</div>
+<div id="S1.Thmtheorem11" class="ltx_theorem ltx_theorem_question">
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">Question 1.11</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="S1.Thmtheorem11.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">For which values of <math id="S1.Thmtheorem11.p1.m1" class="ltx_Math" alttext="r" display="inline"><mi>r</mi></math> is <math id="S1.Thmtheorem11.p1.m2" class="ltx_Math" alttext="e^{rt}" display="inline"><msup><mi>e</mi><mrow><mi>r</mi><mo>⁢</mo><mi>t</mi></mrow></msup></math> a solution to <math id="S1.Thmtheorem11.p1.m3" class="ltx_Math" alttext="x^{\prime\prime\prime}-3x^{\prime\prime}+2x^{\prime}=0" display="inline"><mrow><mrow><mrow><msup><mi>x</mi><mo>′′′</mo></msup><mo>−</mo><mrow><mn>3</mn><mo>⁢</mo><msup><mi>x</mi><mo>′′</mo></msup></mrow></mrow><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mo>′</mo></msup></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math></span></p>
+</div>
+</div>
+<div id="S1.Thmtheorem12" class="ltx_theorem ltx_theorem_question">
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">Question 1.12</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="S1.Thmtheorem12.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">For which values of <math id="S1.Thmtheorem12.p1.m1" class="ltx_Math" alttext="r" display="inline"><mi>r</mi></math> is <math id="S1.Thmtheorem12.p1.m2" class="ltx_Math" alttext="t^{r}" display="inline"><msup><mi>t</mi><mi>r</mi></msup></math> a solution to <math id="S1.Thmtheorem12.p1.m3" class="ltx_Math" alttext="t^{2}x^{\prime\prime}+4tx^{\prime}+2x=0" display="inline"><mrow><mrow><mrow><msup><mi>t</mi><mn>2</mn></msup><mo>⁢</mo><msup><mi>x</mi><mo>′′</mo></msup></mrow><mo>+</mo><mrow><mn>4</mn><mo>⁢</mo><mi>t</mi><mo>⁢</mo><msup><mi>x</mi><mo>′</mo></msup></mrow><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math></span></p>
+</div>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</section>
+</section>
+<section id="S2" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">2 </span>First–Order Differential Equations</h2>
+
+<div id="S2.p1" class="ltx_para">
+<p class="ltx_p">In this chapter, we deal with first order differential equations. That is, equations
+of the form:</p>
+</div>
+<div id="S2.p2" class="ltx_para">
+<p class="ltx_p">Typically, we will assume that we can solve this equation for <math id="S2.p2.m1" class="ltx_Math" alttext="x^{\prime}(t)" display="inline"><mrow><msup><mi>x</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></math> and this gives the
+equation:</p>
+</div>
+<section id="S2.SS1" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">2.1 </span>First Order Linear Differential Equations; Integrating Factors</h3>
+
+<div id="S2.SS1.p1" class="ltx_para">
+<p class="ltx_p">Any linear, first order differential equation can be written in the form:</p>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+<div id="S2.Thmtheorem1" class="ltx_theorem ltx_theorem_example">
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">Example 2.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="S2.Thmtheorem1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Find a solution to <math id="S2.Thmtheorem1.p1.m1" class="ltx_Math" alttext="(4+t^{2})\dfrac{dx}{dt}+2tx=4t" display="inline"><mrow><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>4</mn><mo>+</mo><msup><mi>t</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>t</mi></mrow></mfrac></mstyle></mrow><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>t</mi><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>=</mo><mrow><mn>4</mn><mo>⁢</mo><mi>t</mi></mrow></mrow></math>.</span></p>
+</div>
+</div>
+<div class="ltx_logical-block workbox ltx_framed_rectangle">
+<div class="ltx_logical-block BigBigVertspace">
+</div>
+<div class="ltx_logical-block BigVertspace">
+</div>
+<div class="ltx_logical-block BigVertspace">
+</div>
+<div class="ltx_logical-block BigVertspace">
+</div>
+<div class="ltx_logical-block BigVertspace">
+</div>
+<div class="ltx_logical-block vertspace">
+</div>
+<div class="ltx_logical-block vertspace">
+</div>
+<div class="ltx_logical-block vertspace">
+</div>
+</div>
+<div id="S2.SS1.p2" class="ltx_para">
+<p class="ltx_p">The equation in the previous example worked out well in the sense that the LHS was the
+derivative of <math id="S2.SS1.p2.m1" class="ltx_Math" alttext="(4+t^{2})x(t)" display="inline"><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>4</mn><mo>+</mo><msup><mi>t</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></math> and we could just integrate. However, not all equations are like that, but
+we can often transform them into an equation that is.</p>
+</div>
+<div id="S2.Thmtheorem2" class="ltx_theorem ltx_theorem_example">
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">Example 2.2</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="S2.Thmtheorem2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Find a solution to <math id="S2.Thmtheorem2.p1.m1" class="ltx_Math" alttext="\dfrac{dx}{dt}+\dfrac{1}{2}x=\dfrac{1}{2}e^{t/3}" display="inline"><mrow><mrow><mstyle displaystyle="true"><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>t</mi></mrow></mfrac></mstyle><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><msup><mi>e</mi><mrow><mi>t</mi><mo>/</mo><mn>3</mn></mrow></msup></mrow></mrow></math>. Which solution satisfies
+<math id="S2.Thmtheorem2.p1.m2" class="ltx_Math" alttext="x(0)=1" display="inline"><mrow><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></math>?</span></p>
+</div>
+</div>
+<div class="ltx_logical-block workbox ltx_framed_rectangle">
+<div class="ltx_logical-block BigBigVertspace">
+</div>
+<div class="ltx_logical-block BigVertspace">
+</div>
+<div class="ltx_logical-block BigVertspace">
+</div>
+<div class="ltx_logical-block BigVertspace">
+</div>
+<div class="ltx_logical-block Vertspace">
+</div>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+<div id="S2.SS1.p3" class="ltx_para">
+<p class="ltx_p">The function that we found above (and denoted <math id="S2.SS1.p3.m1" class="ltx_Math" alttext="\mu(t)" display="inline"><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></math>) is called that <span class="ltx_text ltx_font_italic">integrating factor</span>.</p>
+</div>
+<div id="S2.Thmtheorem3" class="ltx_theorem ltx_theorem_example">
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">Example 2.3</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="S2.Thmtheorem3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Find the integrating factor (and solution) for the equation <math id="S2.Thmtheorem3.p1.m1" class="ltx_Math" alttext="\dfrac{dx}{dt}+px=q" display="inline"><mrow><mrow><mstyle displaystyle="true"><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>t</mi></mrow></mfrac></mstyle><mo>+</mo><mrow><mi>p</mi><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>=</mo><mi>q</mi></mrow></math>.</span></p>
+</div>
+</div>
+<div class="ltx_logical-block workbox ltx_framed_rectangle">
+<div class="ltx_logical-block BigBigVertspace">
+</div>
+<div class="ltx_logical-block BigVertspace">
+</div>
+<div class="ltx_logical-block BigVertspace">
+</div>
+<div class="ltx_logical-block BigVertspace">
+</div>
+<div class="ltx_logical-block Vertspace">
+</div>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+<div id="S2.Thmtheorem4" class="ltx_theorem ltx_theorem_example">
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">Example 2.4</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="S2.Thmtheorem4.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Solve the IVP: <math id="S2.Thmtheorem4.p1.m1" class="ltx_Math" alttext="tx^{\prime}+2x=4t^{2}" display="inline"><mrow><mrow><mrow><mi>t</mi><mo>⁢</mo><msup><mi>x</mi><mo>′</mo></msup></mrow><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>=</mo><mrow><mn>4</mn><mo>⁢</mo><msup><mi>t</mi><mn>2</mn></msup></mrow></mrow></math>, with <math id="S2.Thmtheorem4.p1.m2" class="ltx_Math" alttext="x(1)=2" display="inline"><mrow><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>2</mn></mrow></math>.</span></p>
+</div>
+</div>
+<div class="ltx_logical-block workbox ltx_framed_rectangle">
+<div class="ltx_logical-block BigBigVertspace">
+</div>
+<div class="ltx_logical-block BigVertspace">
+</div>
+<div class="ltx_logical-block BigVertspace">
+</div>
+<div class="ltx_logical-block BigVertspace">
+</div>
+<div class="ltx_logical-block BigVertspace">
+</div>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+<div id="S2.Thmtheorem5" class="ltx_theorem ltx_theorem_example">
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">Example 2.5</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="S2.Thmtheorem5.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Solve the IVP: <math id="S2.Thmtheorem5.p1.m1" class="ltx_Math" alttext="2x^{\prime}+tx=2" display="inline"><mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mo>′</mo></msup></mrow><mo>+</mo><mrow><mi>t</mi><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>=</mo><mn>2</mn></mrow></math>, with <math id="S2.Thmtheorem5.p1.m2" class="ltx_Math" alttext="x(0)=1" display="inline"><mrow><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></math>.</span></p>
+</div>
+</div>
+<div class="ltx_logical-block workbox ltx_framed_rectangle">
+<div class="ltx_logical-block BigBigVertspace">
+</div>
+<div class="ltx_logical-block BigVertspace">
+</div>
+<div class="ltx_logical-block BigVertspace">
+</div>
+<div class="ltx_logical-block BigVertspace">
+</div>
+<div class="ltx_logical-block BigVertspace">
+</div>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</section>
+<section id="S2.SS2" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">2.2 </span>Some Exercises</h3>
+
+<div id="S2.Thmtheorem6" class="ltx_theorem ltx_theorem_question">
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">Question 2.6</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="S2.Thmtheorem6.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Find the general solution to <math id="S2.Thmtheorem6.p1.m1" class="ltx_Math" alttext="x^{\prime}+3x=t+e^{-2t}" display="inline"><mrow><mrow><msup><mi>x</mi><mo>′</mo></msup><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>=</mo><mrow><mi>t</mi><mo>+</mo><msup><mi>e</mi><mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mi>t</mi></mrow></mrow></msup></mrow></mrow></math>.</span></p>
+</div>
+</div>
+<div id="S2.Thmtheorem7" class="ltx_theorem ltx_theorem_question">
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">Question 2.7</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="S2.Thmtheorem7.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Find the general solution to <math id="S2.Thmtheorem7.p1.m1" class="ltx_Math" alttext="x^{\prime}+\dfrac{1}{t}x=3\cos(2t)" display="inline"><mrow><mrow><msup><mi>x</mi><mo>′</mo></msup><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mi>t</mi></mfrac></mstyle><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>=</mo><mrow><mn>3</mn><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>t</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math>, for <math id="S2.Thmtheorem7.p1.m2" class="ltx_Math" alttext="t&gt;0" display="inline"><mrow><mi>t</mi><mo>&gt;</mo><mn>0</mn></mrow></math>.</span></p>
+</div>
+</div>
+<div id="S2.Thmtheorem8" class="ltx_theorem ltx_theorem_question">
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem"><span class="ltx_text ltx_font_bold">Question 2.8</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="S2.Thmtheorem8.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Find the solution to the IVP <math id="S2.Thmtheorem8.p1.m1" class="ltx_Math" alttext="tx^{\prime}+(t+1)x=t" display="inline"><mrow><mrow><mrow><mi>t</mi><mo>⁢</mo><msup><mi>x</mi><mo>′</mo></msup></mrow><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>=</mo><mi>t</mi></mrow></math>, with <math id="S2.Thmtheorem8.p1.m2" class="ltx_Math" alttext="x(\ln 2)=1" display="inline"><mrow><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>ln</mi><mo lspace="0.167em">⁡</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></math>, <math id="S2.Thmtheorem8.p1.m3" class="ltx_Math" alttext="t&gt;0" display="inline"><mrow><mi>t</mi><mo>&gt;</mo><mn>0</mn></mrow></math>.</span></p>
+</div>
+</div>
+</section>
+</section>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Mon Aug 25 16:18:05 2025 by <a href="http://dlmf.nist.gov/LaTeXML/" class="ltx_LaTeXML_logo"><span style="letter-spacing:-0.2em; margin-right:0.1em;">L<span class="ltx_font_smallcaps" style="position:relative; bottom:2.2pt;">a</span>T<span class="ltx_font_smallcaps" style="font-size:120%;position:relative; bottom:-0.2ex;">e</span></span><span style="font-size:90%; position:relative; bottom:-0.2ex;">XML</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="Mascot Sammy"></a>
+</div></footer>
+</div>
+</body>
+</html>
